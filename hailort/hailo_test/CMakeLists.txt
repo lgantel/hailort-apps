@@ -13,6 +13,10 @@ set(HAILO_TEST_CPP_FILES
     hailo_test.cpp
 )
 
+add_executable(hailo_test
+    ${HAILO_TEST_CPP_FILES}
+)
+
 set_property(TARGET hailo_test PROPERTY CXX_STANDARD 14)
 
 target_link_libraries(hailo_test
