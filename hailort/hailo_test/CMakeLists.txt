@@ -1,8 +1,6 @@
 cmake_minimum_required(VERSION 3.5.0)
 
-if(HAILO_BUILD_SERVICE)
-    add_definitions( -DHAILO_SUPPORT_MULTI_PROCESS )
-endif()
+include(${HAILO_EXTERNALS_CMAKE_SCRIPTS}/spdlog.cmake)
 
 set(HAILO_TEST_CPP_FILES
     hailo_test.cpp
@@ -16,6 +14,7 @@ set_property(TARGET hailo_test PROPERTY CXX_STANDARD 14)
 
 target_link_libraries(hailo_test
     libhailort
+    spdlog::spdlog
 )
 
 target_include_directories(hailo_test
