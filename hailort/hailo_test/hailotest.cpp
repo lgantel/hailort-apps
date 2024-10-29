@@ -1,4 +1,4 @@
-#include "hailo_test.hpp"
+#include "hailotest.hpp"
 #include "hailo/device.hpp"
 
 #include <iostream>

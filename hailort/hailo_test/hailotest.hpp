@@ -1,5 +1,5 @@
-#ifndef HAILO_TEST_HPP
-#define HAILO_TEST_HPP
+#ifndef HAILOTEST_HPP
+#define HAILOTEST_HPP
 
 #include "hailo/hailort.h"
 #include "hailo/expected.hpp"
@@ -10,4 +10,4 @@
 
 using namespace hailort;
 
-#endif // HAILO_TEST_HPP
+#endif // HAILOTEST_HPP
